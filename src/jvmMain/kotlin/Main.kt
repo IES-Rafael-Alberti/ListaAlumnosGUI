@@ -153,7 +153,7 @@ fun TextBoxWithDeleteIcon(text: String, onDeleteClicked: () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
     ) {
-        TextBox(text = text, modifier = Modifier.weight(1f)) // Agregamos el peso
+        TextBox(text = text, modifier = Modifier.weight(1f))
         IconButton(onClick = onDeleteClicked) {
             Icon(Icons.Default.Delete, contentDescription = "Delete")
         }
