@@ -49,7 +49,7 @@ fun main() = application {
                             value = newStudent,
                             onValueChange = { newStudent = it },
                             label = { Text("New student name") },
-                            modifier = Modifier.fillMaxWidth()
+                            modifier = Modifier.fillMaxWidth().padding(top = 100.dp)
                         )
                         Button(
                             onClick = {
